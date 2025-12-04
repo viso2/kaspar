@@ -28,8 +28,8 @@ class Button extends GUIObjects {
     ypos = yp;
     radii = tr;
   }
-  
-    Button(int xp, int yp, int ow, int oh, boolean sl) {
+
+  Button(int xp, int yp, int ow, int oh, boolean sl) {
     super();
     objectWidth = ow;
     objectHeight = oh;
