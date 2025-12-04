@@ -1,3 +1,12 @@
+
+
+void setup(){
+fullScreen();  
+
+  
+}
+
 void draw(){
- println("H31l H1tl34"); 
+background(255,255,255);
+  
 }
