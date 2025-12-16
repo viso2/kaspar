@@ -12,8 +12,8 @@ void setup() {
   klasse1 = new Button(width-width/4, height-height/4, width/6, height/8, true);
   klasse2 = new Button(width-width/4, height-height/4*2, width/6, height/8, true);
   klasse3 = new Button(width-width/4, height-height/4*3, width/6, height/8, true);
-  seSkema = new Button(width/2,height/2,width/6,height/8,true);
-  inputData = new Button(width/2,int(height/1.25),width/6,height/8,true);
+  seSkema = new Button(width/2-width/12,height/2,width/6,height/8,true);
+  inputData = new Button(width/2-width/12,int(height/1.25),width/6,height/8,true);
 }
 
 void draw() {
@@ -32,4 +32,8 @@ void draw() {
   } else if (tilstand == 1) {
     //skema view//
   }
+}
+
+void mousePressed(){
+ s 
 }
