@@ -5,6 +5,7 @@ class Button extends GUIObjects {
   byte radii = 0;  // 0 for not rounded corners. Else it is the radius of the rounded corner
   int index; // Index of the ingredient in its category
   boolean Selectable = false;
+  String tekst = "";
 
   Button() {
     super();          // Call GUIObjects()
@@ -29,13 +30,14 @@ class Button extends GUIObjects {
     radii = tr;
   }
 
-  Button(int xp, int yp, int ow, int oh, boolean sl) {
+  Button(int xp, int yp, int ow, int oh, boolean sl, String txt) {
     super();
     objectWidth = ow;
     objectHeight = oh;
     xpos = xp;
     ypos = yp;
     Selectable = sl;
+    tekst = txt;
   }
 
   void display() {
@@ -59,13 +61,14 @@ class Button extends GUIObjects {
         rect(xpos+1, ypos+1, objectWidth-2, objectHeight-2);
       }
     }
+    fill(255,255,255);
+    text(tekst,xpos,ypos,objectWidth,objectHeight);
   }
 
   void drawCheckmark() {
     fill(255);
-    textSize(14);
     textAlign(CENTER, CENTER);
-    text("✓", xpos + objectWidth / 2, ypos + objectHeight / 2);
+
   }
 
   boolean isSelected() {
