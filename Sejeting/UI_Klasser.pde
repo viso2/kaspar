@@ -56,12 +56,12 @@ class Button extends GUIObjects {
         drawCheckmark();
       } else {
         // Clear the area where the checkmark would be
-        fill(26, 70, 69);
+        fill(37, 99, 235);
         noStroke();
         rect(xpos+1, ypos+1, objectWidth-2, objectHeight-2);
       }
     }
-    fill(255,255,255);
+    fill(17,24,39);
     text(tekst,xpos,ypos,objectWidth,objectHeight);
   }
 

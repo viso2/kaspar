@@ -15,11 +15,11 @@ void setup() {
 }
 
 void draw() {
-  background(255, 255, 255);
+  background(240, 240, 240);
 
   if (tilstand == 0) {
     //main menu//
-    fill(0, 0, 0);
+    fill(17,24,39);
     textSize(width/20);
     textAlign(CENTER);
     text("Vælg klasse og derefter kan deres skema ses", width/2, height/5);
